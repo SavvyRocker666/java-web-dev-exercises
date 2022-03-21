@@ -22,7 +22,7 @@ if (!input.hasNextDouble()){
     System.exit(status:2);
 }
 
-if (input.hasNextDouble()) ;
+if (input.hasNextDouble());
         radius = input.nextDouble();
         input.close();
 
