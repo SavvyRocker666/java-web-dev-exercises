@@ -19,7 +19,7 @@ if (!input.hasNextDouble()){
     radius = input.nextDouble();
     input.close();
     int status;
-    System.exit(status:2);
+    System.exit(status:2);;
 }
 
 if (input.hasNextDouble());
