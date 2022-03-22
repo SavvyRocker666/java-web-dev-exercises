@@ -13,14 +13,14 @@ public class Area {
 
         input = new Scanner(System.in);
         System.out.println("Enter the radius of the circle");
-if (!input.hasNextDouble()){
-    System.out.println("Please enter a positive number");
-}else {
-    radius = input.nextDouble();
-    input.close();
-    int status;
-    System.exit(status:2);;
-}
+//if (!input.hasNextDouble()){
+//    System.out.println("Please enter a positive number");
+//}else {
+//    radius = input.nextDouble();
+//    input.close();
+//    int status;
+//    System.exit(status:2);
+//}
 
 if (input.hasNextDouble());
         radius = input.nextDouble();
