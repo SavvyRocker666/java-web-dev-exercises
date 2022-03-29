@@ -1,18 +1,21 @@
 package org.launchcode.java.studios.arrays;
 
-public class arrays {
-    public static void main(String [] args) {
-    for (int i = 0; i < 10; i++ ) {
-        System.out.println(i);
+public class Arrays {
+    public static void main(String[] args) throws FileNotFoundException{
+        File file = new File("src/org/launchcode/java/studios/CountingCharacters/text.txt");
+        Scanner input = new Scanner(file);
+        String text = input.nextLine().toLowerCase().replaceAll("[^a-z]","");
+        char[] characterArray = text.toCharArray();
+        HashMap<Character,Integer> characterCounts = new HashMap<>();
+        for(char character : characterArray){
+            if(!characterCounts.containsKey(character)){
+                characterCounts.put(character,1);
+            } else {
+                characterCounts.put(character,characterCounts.get(character)+1);
+            }
+        }
+        for(Map.Entry<Character, Integer> count : characterCounts.entrySet()){
+            System.out.println(count.getKey() + ":"+count.getValue());
+        }
+    }
 }
-
-    char[] charactersInString = myString.toCharArray();
-    HashMap<String, Integer> letters = new HashMap<>();}
-letters.put("I", 1);
-        letters.put("O", 1);
-        letters.put("S", 1);
-        letters.put("'", 2);
-        letters.put(":", 66);
-        letters.put("a", 20);
-        letters.put("b", 2);
-        letters.put("c", 7);
